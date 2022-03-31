@@ -37,7 +37,6 @@ class FrequencyBot:
         for charset in self.charsets:
           charset -= {char}
       
-
   def _score(self, word):
     return sum([self.weights[c] for c in set(word)])
 
